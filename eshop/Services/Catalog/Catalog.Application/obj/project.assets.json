@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Catalog.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Catalog.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Catalog.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Catalog.DataAccess.dll": {}
+        }
+      },
+      "Catalog.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Catalog.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Catalog.Entities.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Catalog.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../Catalog.DataAccess/Catalog.DataAccess.csproj",
+      "msbuildProject": "../Catalog.DataAccess/Catalog.DataAccess.csproj"
+    },
+    "Catalog.Entities/1.0.0": {
+      "type": "project",
+      "path": "../Catalog.Entities/Catalog.Entities.csproj",
+      "msbuildProject": "../Catalog.Entities/Catalog.Entities.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Catalog.DataAccess >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\turka\\.nuget\\packages\\": {},
@@ -39,7 +76,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\turka\\source\\repos\\Kurumsal\\PayCore\\Group 1\\eshop\\Services\\Catalog\\Catalog.DataAccess\\Catalog.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\turka\\source\\repos\\Kurumsal\\PayCore\\Group 1\\eshop\\Services\\Catalog\\Catalog.DataAccess\\Catalog.DataAccess.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

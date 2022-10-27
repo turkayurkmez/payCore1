@@ -88,6 +88,42 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Catalog.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Catalog.DataAccess": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Catalog.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Catalog.Application.dll": {}
+        }
+      },
+      "Catalog.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Catalog.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Catalog.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Catalog.DataAccess.dll": {}
+        }
+      },
+      "Catalog.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Catalog.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Catalog.Entities.dll": {}
+        }
       }
     }
   },
@@ -216,10 +252,26 @@
         "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Catalog.Application/1.0.0": {
+      "type": "project",
+      "path": "../Catalog.Application/Catalog.Application.csproj",
+      "msbuildProject": "../Catalog.Application/Catalog.Application.csproj"
+    },
+    "Catalog.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../Catalog.DataAccess/Catalog.DataAccess.csproj",
+      "msbuildProject": "../Catalog.DataAccess/Catalog.DataAccess.csproj"
+    },
+    "Catalog.Entities/1.0.0": {
+      "type": "project",
+      "path": "../Catalog.Entities/Catalog.Entities.csproj",
+      "msbuildProject": "../Catalog.Entities/Catalog.Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Catalog.Application >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -255,7 +307,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\turka\\source\\repos\\Kurumsal\\PayCore\\Group 1\\eshop\\Services\\Catalog\\Catalog.Application\\Catalog.Application.csproj": {
+              "projectPath": "C:\\Users\\turka\\source\\repos\\Kurumsal\\PayCore\\Group 1\\eshop\\Services\\Catalog\\Catalog.Application\\Catalog.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

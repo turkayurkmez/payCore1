@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Application", "Serv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.DataAccess", "Services\Catalog\Catalog.DataAccess\Catalog.DataAccess.csproj", "{93C70C53-A0D8-4BA0-AD07-F0F4C30C94DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Entities", "Services\Catalog\Catalog.Entities\Catalog.Entities.csproj", "{F7ABBE84-9F9B-49BA-8281-0B159A827926}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{93C70C53-A0D8-4BA0-AD07-F0F4C30C94DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93C70C53-A0D8-4BA0-AD07-F0F4C30C94DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93C70C53-A0D8-4BA0-AD07-F0F4C30C94DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7ABBE84-9F9B-49BA-8281-0B159A827926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7ABBE84-9F9B-49BA-8281-0B159A827926}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7ABBE84-9F9B-49BA-8281-0B159A827926}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7ABBE84-9F9B-49BA-8281-0B159A827926}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +86,7 @@ Global
 		{257D464B-5F01-4C64-B115-478FF679E850} = {DE86AF24-4495-43AF-BC33-EC98E34801D6}
 		{4AD5C658-A3AB-483E-91D2-E62B1A57D1B4} = {A40A0E01-BB11-435C-8A66-9584840E94FE}
 		{93C70C53-A0D8-4BA0-AD07-F0F4C30C94DF} = {A40A0E01-BB11-435C-8A66-9584840E94FE}
+		{F7ABBE84-9F9B-49BA-8281-0B159A827926} = {A40A0E01-BB11-435C-8A66-9584840E94FE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B625A542-A51E-4C46-A347-9AD2D374F037}
