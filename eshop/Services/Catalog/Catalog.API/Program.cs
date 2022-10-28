@@ -1,5 +1,6 @@
 using Catalog.Application;
 using Catalog.DataAccess;
+using MassTransit;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,19 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<IProductService, ProductService>();
 builder.Services.AddSingleton<IProductRepository, FakeProductRepository>();
+
+builder.Services.AddMassTransit(config =>
+{
+    config.UsingRabbitMq((context, configurator) =>
+    {
+        configurator.Host("localhost", "/", host =>
+        {
+            host.Username("guest");
+            host.Password("guest");
+        });
+        configurator.ConfigureEndpoints(context);
+    });
+});
 
 var app = builder.Build();
 
