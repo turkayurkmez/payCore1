@@ -11,7 +11,8 @@
           "Catalog.Application": "1.0.0",
           "MassTransit": "8.0.7",
           "MassTransit.RabbitMQ": "8.0.7",
-          "Swashbuckle.AspNetCore": "6.2.3"
+          "Swashbuckle.AspNetCore": "6.2.3",
+          "eshop.Messages": "1.0.0"
         },
         "runtime": {
           "Catalog.API.dll": {}
@@ -198,6 +199,11 @@
       "Catalog.Entities/1.0.0": {
         "runtime": {
           "Catalog.Entities.dll": {}
+        }
+      },
+      "eshop.Messages/1.0.0": {
+        "runtime": {
+          "eshop.Messages.dll": {}
         }
       }
     }
@@ -408,6 +414,11 @@
       "sha512": ""
     },
     "Catalog.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "eshop.Messages/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

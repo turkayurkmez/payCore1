@@ -1,0 +1,12 @@
+C:\Users\turka\source\repos\Kurumsal\PayCore\Group 1\eshop\MessageBus\eshop.Messages\bin\Debug\net6.0\eshop.Messages.deps.json
+C:\Users\turka\source\repos\Kurumsal\PayCore\Group 1\eshop\MessageBus\eshop.Messages\bin\Debug\net6.0\eshop.Messages.dll
+C:\Users\turka\source\repos\Kurumsal\PayCore\Group 1\eshop\MessageBus\eshop.Messages\bin\Debug\net6.0\eshop.Messages.pdb
+C:\Users\turka\source\repos\Kurumsal\PayCore\Group 1\eshop\MessageBus\eshop.Messages\obj\Debug\net6.0\eshop.Messages.csproj.AssemblyReference.cache
+C:\Users\turka\source\repos\Kurumsal\PayCore\Group 1\eshop\MessageBus\eshop.Messages\obj\Debug\net6.0\eshop.Messages.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\turka\source\repos\Kurumsal\PayCore\Group 1\eshop\MessageBus\eshop.Messages\obj\Debug\net6.0\eshop.Messages.AssemblyInfoInputs.cache
+C:\Users\turka\source\repos\Kurumsal\PayCore\Group 1\eshop\MessageBus\eshop.Messages\obj\Debug\net6.0\eshop.Messages.AssemblyInfo.cs
+C:\Users\turka\source\repos\Kurumsal\PayCore\Group 1\eshop\MessageBus\eshop.Messages\obj\Debug\net6.0\eshop.Messages.csproj.CoreCompileInputs.cache
+C:\Users\turka\source\repos\Kurumsal\PayCore\Group 1\eshop\MessageBus\eshop.Messages\obj\Debug\net6.0\eshop.Messages.dll
+C:\Users\turka\source\repos\Kurumsal\PayCore\Group 1\eshop\MessageBus\eshop.Messages\obj\Debug\net6.0\refint\eshop.Messages.dll
+C:\Users\turka\source\repos\Kurumsal\PayCore\Group 1\eshop\MessageBus\eshop.Messages\obj\Debug\net6.0\eshop.Messages.pdb
+C:\Users\turka\source\repos\Kurumsal\PayCore\Group 1\eshop\MessageBus\eshop.Messages\obj\Debug\net6.0\ref\eshop.Messages.dll
