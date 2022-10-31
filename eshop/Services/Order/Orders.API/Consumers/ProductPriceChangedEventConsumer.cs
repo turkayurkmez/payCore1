@@ -11,7 +11,10 @@ namespace Orders.API.Consumers
         {
             _logger = logger;
         }
+        public ProductPriceChangedEventConsumer()
+        {
 
+        }
         public Task Consume(ConsumeContext<ProductPriceChanged> context)
         {
             _logger.LogInformation($"Dün aldığınız {context.Message.ProductId} id'li ürünün yeni fiyatı {context.Message.NewPrice} TL oldu.{context.Message.OldPrice - context.Message.NewPrice} TL Hesabınıza tanımlandı.... ");

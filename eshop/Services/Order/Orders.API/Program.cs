@@ -1,3 +1,4 @@
+using eshop.Messages;
 using MassTransit;
 using Orders.API.Consumers;
 
@@ -21,7 +22,7 @@ builder.Services.AddMassTransit(config =>
             host.Username("guest");
             host.Password("guest");
         });
-        configurator.ConfigureEndpoints(context);
+        configurator.ReceiveEndpoint(nameof(ProductPriceChanged), e => e.ConfigureConsumer<ProductPriceChangedEventConsumer>(context));
     });
 });
 

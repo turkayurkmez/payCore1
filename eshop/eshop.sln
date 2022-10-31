@@ -5,35 +5,39 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{DE86AF24-4495-43AF-BC33-EC98E34801D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{C8AF2C0F-18BA-4885-A469-1C45EC03F1C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{C8AF2C0F-18BA-4885-A469-1C45EC03F1C7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{A40A0E01-BB11-435C-8A66-9584840E94FE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{1C85B88D-9780-4008-8FBC-CFB0D589FDAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basket.API", "Services\Basket\Basket.API\Basket.API.csproj", "{4571F225-6401-40E5-B9C5-731BD6612B1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basket.API", "Services\Basket\Basket.API\Basket.API.csproj", "{4571F225-6401-40E5-B9C5-731BD6612B1E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Order", "Order", "{4CDA71D4-17FD-4EB9-8808-CE39312EAD33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orders.API", "Services\Order\Orders.API\Orders.API.csproj", "{41ECFC6C-9278-4304-BB37-546C1D788CAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orders.API", "Services\Order\Orders.API\Orders.API.csproj", "{41ECFC6C-9278-4304-BB37-546C1D788CAB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payment", "Payment", "{5017D2F9-39CD-4D00-9C6B-D7378B77134D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.API", "Services\Payment\Payment.API\Payment.API.csproj", "{B3E8A2A2-2425-4611-9A51-C6D0AACCD104}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Payment.API", "Services\Payment\Payment.API\Payment.API.csproj", "{B3E8A2A2-2425-4611-9A51-C6D0AACCD104}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shipment.API", "Services\Shipment\Shipment.API\Shipment.API.csproj", "{23326E72-058B-4443-81BD-414E30D213C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shipment.API", "Services\Shipment\Shipment.API\Shipment.API.csproj", "{23326E72-058B-4443-81BD-414E30D213C6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shipment", "Shipment", "{257D464B-5F01-4C64-B115-478FF679E850}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Application", "Services\Catalog\Catalog.Application\Catalog.Application.csproj", "{4AD5C658-A3AB-483E-91D2-E62B1A57D1B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.Application", "Services\Catalog\Catalog.Application\Catalog.Application.csproj", "{4AD5C658-A3AB-483E-91D2-E62B1A57D1B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.DataAccess", "Services\Catalog\Catalog.DataAccess\Catalog.DataAccess.csproj", "{93C70C53-A0D8-4BA0-AD07-F0F4C30C94DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.DataAccess", "Services\Catalog\Catalog.DataAccess\Catalog.DataAccess.csproj", "{93C70C53-A0D8-4BA0-AD07-F0F4C30C94DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Entities", "Services\Catalog\Catalog.Entities\Catalog.Entities.csproj", "{F7ABBE84-9F9B-49BA-8281-0B159A827926}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.Entities", "Services\Catalog\Catalog.Entities\Catalog.Entities.csproj", "{F7ABBE84-9F9B-49BA-8281-0B159A827926}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MessageBus", "MessageBus", "{CB44E32A-8D04-4C75-A7BE-D7DED85DBB1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eshop.Messages", "MessageBus\eshop.Messages\eshop.Messages.csproj", "{81B8D910-987D-4662-8943-B403E9940392}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eshop.Messages", "MessageBus\eshop.Messages\eshop.Messages.csproj", "{81B8D910-987D-4662-8943-B403E9940392}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stock", "Stock", "{E15FDDC0-2357-4FD3-A485-0FBB02DF88F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stock.API", "Services\Stock\Stock.API\Stock.API.csproj", "{D2C13302-E103-48ED-B591-91702F4F54BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +81,10 @@ Global
 		{81B8D910-987D-4662-8943-B403E9940392}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81B8D910-987D-4662-8943-B403E9940392}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81B8D910-987D-4662-8943-B403E9940392}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2C13302-E103-48ED-B591-91702F4F54BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2C13302-E103-48ED-B591-91702F4F54BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2C13302-E103-48ED-B591-91702F4F54BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2C13302-E103-48ED-B591-91702F4F54BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,6 +104,8 @@ Global
 		{93C70C53-A0D8-4BA0-AD07-F0F4C30C94DF} = {A40A0E01-BB11-435C-8A66-9584840E94FE}
 		{F7ABBE84-9F9B-49BA-8281-0B159A827926} = {A40A0E01-BB11-435C-8A66-9584840E94FE}
 		{81B8D910-987D-4662-8943-B403E9940392} = {CB44E32A-8D04-4C75-A7BE-D7DED85DBB1E}
+		{E15FDDC0-2357-4FD3-A485-0FBB02DF88F4} = {DE86AF24-4495-43AF-BC33-EC98E34801D6}
+		{D2C13302-E103-48ED-B591-91702F4F54BF} = {E15FDDC0-2357-4FD3-A485-0FBB02DF88F4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B625A542-A51E-4C46-A347-9AD2D374F037}
