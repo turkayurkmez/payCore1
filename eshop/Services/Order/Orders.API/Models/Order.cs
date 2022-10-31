@@ -15,6 +15,7 @@
         public DateTime? ShippedDate { get; set; }
         public OrderStatus State { get; set; }
         public List<OrderItem> OrderItems { get; set; }
+        public int CustomerId { get; set; }
 
     }
 

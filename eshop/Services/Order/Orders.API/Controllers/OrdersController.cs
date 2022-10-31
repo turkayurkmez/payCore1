@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using eshop.Messages;
+using MassTransit;
+using Microsoft.AspNetCore.Mvc;
+using Orders.API.Models;
 
 namespace Orders.API.Controllers
 {
@@ -20,10 +23,50 @@ namespace Orders.API.Controllers
     [ApiController]
     public class OrdersController : ControllerBase
     {
-        [HttpPost]
-        public IActionResult CreateOrder(string customerId, )
-        {
+        private readonly ILogger<OrdersController> _logger;
+        private readonly IPublishEndpoint _publishEndpoint;
 
+        public OrdersController(ILogger<OrdersController> logger, IPublishEndpoint publishEndpoint)
+        {
+            _logger = logger;
+            _publishEndpoint = publishEndpoint;
+        }
+
+        [HttpPost]
+        public IActionResult CreateOrder(int customerId, List<OrderItem> orderItems)
+        {
+            Order order = new Order
+            {
+                OrderDate = DateTime.Now,
+                State = OrderStatus.Pending,
+                OrderItems = orderItems,
+                CustomerId = customerId
+
+            };
+            var totalPrice = orderItems.Sum(od => od.Quantity * od.Price);
+            _logger.LogInformation($"{order.OrderDate} tarihinde, sipariş oluşturuldu. Bu siparişte; {totalPrice} tutarında ürün alındı. Sipariş durumu: {order.State}");
+
+
+            var orderItemMessages = orderItems.Select(x => new OrderItemMessage
+            {
+                Price = x.Price,
+                ProductId = x.ProductId,
+                Quantity = x.Quantity
+            }).ToList();
+
+
+
+            OrderCreated orderCreated = new OrderCreated
+            {
+                CustomerId = customerId,
+                OrderId = 8,
+                OrderItems = orderItemMessages,
+                TotalPrice = totalPrice
+            };
+
+            _publishEndpoint.Publish(orderCreated);
+
+            return Ok();
         }
     }
 }
