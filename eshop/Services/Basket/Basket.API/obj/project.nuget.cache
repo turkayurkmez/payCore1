@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SSU0+EkhAMn5hkLP2Z1QnPtlL6i5OK6iUHiQa5DswdkmiVaJ/gV6uFWB2G4ZmoFbm4V4I/2TGre8sMfryBelhA==",
+  "dgSpecHash": "brA3I6w81mM1T1jjzp74tcAIA6iZel6q7oAxmJQ28mjyrIDnQ3AD8cNhUcYRBCIQD7WUWkPCik6jq+5HvnTZYw==",
   "success": true,
   "projectFilePath": "C:\\Users\\turka\\source\\repos\\Kurumsal\\PayCore\\Group 1\\eshop\\Services\\Basket\\Basket.API\\Basket.API.csproj",
   "expectedPackageFiles": [
@@ -18,6 +18,7 @@
     "C:\\Users\\turka\\.nuget\\packages\\microsoft.extensions.options\\3.1.18\\microsoft.extensions.options.3.1.18.nupkg.sha512",
     "C:\\Users\\turka\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.18\\microsoft.extensions.primitives.3.1.18.nupkg.sha512",
     "C:\\Users\\turka\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\turka\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512",
     "C:\\Users\\turka\\.nuget\\packages\\rabbitmq.client\\6.4.0\\rabbitmq.client.6.4.0.nupkg.sha512",
     "C:\\Users\\turka\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\turka\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",

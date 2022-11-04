@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3.10-management   
+    ports:
+     - "5672:5672"
+     - "15672:15672"
+  basket.api:
+    image: ${DOCKER_REGISTRY-}basketapi
+    environment:
+      host: "rabbitmq"
+    build:
+      context: .
+      dockerfile: Services/Basket/Basket.API/Dockerfile
+
+  catalog.api:
+    image: ${DOCKER_REGISTRY-}catalogapi
+    build:
+      context: .
+      dockerfile: Services/Catalog/Catalog.API/Dockerfile
+
