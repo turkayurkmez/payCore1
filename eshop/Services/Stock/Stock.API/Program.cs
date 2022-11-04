@@ -1,4 +1,5 @@
 using MassTransit;
+using Stock.API.Consumers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +12,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddMassTransit(config =>
 {
-    //config.AddConsumer<ProductPriceChangedEventConsumer>();
+    config.AddConsumer<OrderCreatedConsumer>();
     config.UsingRabbitMq((context, configurator) =>
     {
         configurator.Host("localhost", "/", host =>

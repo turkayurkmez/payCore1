@@ -1,7 +1,9 @@
 ﻿using eshop.Messages;
 using MassTransit;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Orders.API.Models;
+using Orders.API.Queries;
 
 namespace Orders.API.Controllers
 {
@@ -25,11 +27,20 @@ namespace Orders.API.Controllers
     {
         private readonly ILogger<OrdersController> _logger;
         private readonly IPublishEndpoint _publishEndpoint;
+        private readonly IMediator _mediator;
 
-        public OrdersController(ILogger<OrdersController> logger, IPublishEndpoint publishEndpoint)
+        public OrdersController(ILogger<OrdersController> logger, IPublishEndpoint publishEndpoint, IMediator mediator)
         {
             _logger = logger;
             _publishEndpoint = publishEndpoint;
+            _mediator = mediator;
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetOrders(int customerId)
+        {
+            var query = new GetOrders { CustomerId = customerId };
+            var orders = await _mediator.Send(query);
+            return Ok(orders);
         }
 
         [HttpPost]

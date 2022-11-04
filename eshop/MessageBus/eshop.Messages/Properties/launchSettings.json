@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "eshop.Messages": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:53775;http://localhost:53778"
+    }
+  }
+}

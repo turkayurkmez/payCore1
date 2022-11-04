@@ -1,7 +1,8 @@
 using eshop.Messages;
 using MassTransit;
+using MediatR;
 using Orders.API.Consumers;
-
+using Orders.API.Extensions;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -11,10 +12,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
+builder.Services.AddMediatR(typeof(Program));
 builder.Services.AddMassTransit(config =>
 {
-    config.AddConsumer<ProductPriceChangedEventConsumer>();
+    config.AddTotalConsumers();
+
+
     config.UsingRabbitMq((context, configurator) =>
     {
         configurator.Host("localhost", "/", host =>
@@ -23,6 +26,7 @@ builder.Services.AddMassTransit(config =>
             host.Password("guest");
         });
         configurator.ReceiveEndpoint(nameof(ProductPriceChanged), e => e.ConfigureConsumer<ProductPriceChangedEventConsumer>(context));
+        configurator.ConfigureEndpoints(context);
     });
 });
 
